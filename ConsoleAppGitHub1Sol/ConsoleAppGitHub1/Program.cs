@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppGitHub1.Operations;
+using System;
 
 namespace MyApp
 {
@@ -8,12 +9,26 @@ namespace MyApp
         {
 
             int a,b,c;
-            int a = 10;
-            int b = 20;
-            c = a + b;
+            Console.WriteLine("Enter a value  :  ");
+            a = Convert.ToInt32(Console.ReadLine());
 
-            console.writeline("The sum is :"+ c )
+            Console.WriteLine("Enter b value  :  ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            AirthamaticOperations obj = new AirthamaticOperations();
+
+            c = obj.Add(a, b);
+            Console.WriteLine("The sum is :" + c);
+
+            c = obj.sub(a, b);
+            Console.WriteLine("The sub is :" + c);
+
+
+
+
             Console.WriteLine("Program Completed...!");
+
+            Console.ReadKey();
         }
     }
 }
