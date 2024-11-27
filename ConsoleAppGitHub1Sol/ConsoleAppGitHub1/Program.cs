@@ -6,7 +6,14 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            int a,b,c;
+            int a = 10;
+            int b = 20;
+            c = a + b;
+
+            console.writeline("The sum is :"+ c )
+            Console.WriteLine("Program Completed...!");
         }
     }
 }
